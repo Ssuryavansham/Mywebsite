@@ -56,11 +56,10 @@ body{
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-.cont{
+.container-fluid{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   
   background: #343F4F;
 }
@@ -118,12 +117,22 @@ body{
     left: 0;
   }
 }
-.cont2{
-    width: 100%;
-}
-.con3{
-    width: 100%;
 
+
+#cum p{
+    background-color: transparent;
+}
+.name{
+    color: rgb(60, 94, 245);
+    font-weight: 600;
+}
+
+
+
+@media (min-width: 992px){
+.container-fluid{
+    height: 10rem;
+}
 }
 
 
