@@ -1,3 +1,6 @@
+body{
+    min-width: cover;
+}
 .carousel-caption{
     color: rgb(237, 245, 121);
 }
@@ -114,7 +117,3 @@
   }
 }
 
-.modal-footer{
-    position: absolute;
-    
-}
