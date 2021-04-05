@@ -4,3 +4,111 @@
 #one{
     background-size: cover;
 }
+
+
+.navbar{
+    background-color: cornflowerblue;
+}
+.rounded-circle{
+    width: 5rem;
+}
+
+#sid{
+    color: rgb(237, 255, 136);
+    margin-left: 1rem;
+}
+
+.navbar-toggler:hover{
+   
+    transition: 1.5s;
+    
+    border-radius: 20px;
+}
+.navbar-toggler:hover{
+    box-shadow: 0 5px 40px 0 #15f4ee inset , 0 5px 40px 0 #fd7d56,
+    0 5px 40px 0 #15f4ee inset , 0 5px 40px 0 #f356d9;
+    
+}
+
+.progress-bar {
+    background-color: cornflowerblue;
+}
+#con1{
+    margin-left: 0rem;
+    width: 20rem;
+}
+#con1 p{
+    color: cyan;
+    width:13rem;
+    margin:0rem
+}
+.tex{
+    margin-left: 3rem;
+}
+.container-fluid{
+    right: 2rem;
+}
+
+.container-fluid{
+    display: flex;
+    align-items: center;
+    
+  
+
+}
+.wrapper{
+    display: inline-flex;
+    background-color:white;
+    width: 100%;
+
+    height:10rem;
+    
+}
+
+.wrapper .stat{
+    padding-left: 1rem;
+    color:cyan;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding-top: 2rem;
+}
+
+.wrapper .dynm{
+    margin-left: 15px;
+    height: 20px;
+    line-height:20px ;
+    margin-top: 3rem;
+    background-color: yellow;
+
+
+}
+
+.dynm li{
+    list-style: none;
+    color: darkorange;
+    font-size:17px ;
+    font-weight: 600;
+   
+}
+.dynm li span{
+    position: relative;
+}
+.dynm li span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    background:white;
+
+    border-left: 2px solid red;
+    animation: typing 1.5s steps(10) infinite;
+
+}
+@keyframes typing {
+    100%{
+        left: 100%;
+       
+    }
+}
