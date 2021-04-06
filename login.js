@@ -1,12 +1,12 @@
 function validate(){
-    var username=document.getElementById("inputEmail").Value;
-    var password=document.getElementById("inputPassword").Value;
-    if(usernam=="s@gmail.com" && password=="1234"){
-        window.location="file:///C:/xampp/htdocs/Mypersnol/index.html";
-        return false;
-    }
-    else{
-        alert("login failed")
-    }
-
-}
+    var username = document.getElementById("inputEmail").value;
+    var password = document.getElementById("inputPassword").value;
+    if ( username == "sid" && password == "123"){
+    alert ("Login successfully");
+    window.open("index.html")
+      }
+      else{
+        alert("Invalid username or password");
+        }
+      return false;
+      }
