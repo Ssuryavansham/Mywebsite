@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <title>Document</title>
+
+</head>
+<style>
+    *{
+        width: auto;
+        height: auto;
+        padding: 0;
+        margin: 0;
+    }
+    .container {
+        background-color: rgb(245, 223, 161);
+        padding: 8vw;
+        align-items: center;
+        height:auto;
+
+
+    }
+
+    #submit_form {
+        margin: 33px;
+        margin-left: 18vw;
+        width: 27vw;
+    }
+
+    #tx1 {
+        margin-left: 18vw;
+        border-radius: 6px;
+        width: 27vw;
+       
+    }
+
+    #tx2 {
+        margin-left: 18vw;
+        margin-top: 2vw;
+        width: 27vw;
+        border-radius: 8px;
+    }
+    
+    @media (min-width: 200px) and (max-width:480px){
+        #submit_form {
+        margin: 33px;
+        margin-left: 18vw;
+        width: 50%;
+    }
+
+    #tx1 {
+       
+        width: 50%;
+       
+    }
+
+    #tx2 {
+       
+        width: 50%;
+       
+    }
+}
+</style>
+
+<body>
+    <div class="container">
+        <form action="https://postmail.invotes.com/send"
+        method="post" id="email_form">
+    
+        <input id ="tx1" type="text" name="subject" placeholder="Subject" />
+        <input id ="tx2" type="text" name="extra_email" placeholder="your email" />
+        <input id ="tx2" type="text" name="extra_number" placeholder="Your number" />
+        <textarea id ="tx2" name="text" placeholder="Message"></textarea>
+        <input type="hidden" name="access_token" value="si25bdp75buwlw85zdjzrcyf" />
+          
+        <input type="hidden" name="success_url" value="https://www.google.com/search?q=sidhant+suryavansham&oq=sidhant+suryavansham&aqs=chrome.0.69i59l2j0i10i13j0i8i13i30j69i61j69i60j69i61.6482j0j7&sourceid=chrome&ie=UTF-8" />
+        <input type="hidden" name="error_url" value="https://www.google.com/search?q=sidhant+suryavansham&oq=sidhant+suryavansham&aqs=chrome.0.69i59l2j0i10i13j0i8i13i30j69i61j69i60j69i61.6482j0j7&sourceid=chrome&ie=UTF-8" />
+       
+    
+      
+       
+        <input id="submit_form" type="submit" value="Send" />
+       
+        
+    </form>
+
+
+
+
+    </div>
+    <script>
+        var submitButton = document.getElementById("submit_form");
+        var form = document.getElementById("email_form");
+        form.addEventListener("submit", function (e) {
+            setTimeout(function() {
+                submitButton.value = "Sending...";
+                submitButton.disabled = true;
+            }, 1);
+        });
+    </script> 
+    <script>
+        document.getElementById("submit_form").onclick = eff;
+        function eff(){
+            document.getElementById("submit_form").style.backgroundColor="green";
+        }
+        
+    </script>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
